@@ -2,10 +2,6 @@
 
 include_recipe "apt"
 
-# -- Make sure apt HTTPS is installed -- #
-
-package "apt-transport-https"
-
 # -- Add repo -- #
 
 # Phusion provides two repos: one that cotains Passenger 5, and one that
