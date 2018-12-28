@@ -20,12 +20,8 @@ end
 
 # -- Install packages -- #
 
-package "nginx-common" do
-  options '-o DPkg::Options::="--force-confold"'
-end
-
-package "passenger"
-package "nginx-extras"
+package "nginx"
+package "libnginx-mod-http-passenger"
 
 # -- Define a service we can use later -- #
 
